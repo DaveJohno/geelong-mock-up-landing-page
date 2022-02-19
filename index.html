@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b942f29d9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>City of Greater Geelong</title>
+  </head>
+  
+  <body>
+    <div class="min-width">min screen width 720px</div>
+    <div class="cover-img window-height">
+      <div class="overlay"></div>
+
+      <div class="spotlight-container">
+        <div class="geelong-spotlight">
+          <ul class="spotlight-tab-header">
+            <li class="spotlight-heading living living-header">living in geelong</li>
+            <li class="spotlight-heading business">
+              business in geelong
+            </li>
+            <li class="spotlight-heading building">building in geelong</li>
+            <li class="spotlight-heading council">City Council</li>
+          </ul>
+        </div>
+        <div class="geelong-spotlight-content living">
+          <h3>Everthing you need to know about</h3>
+          <h2 class="everything-about-living">living in geelong</h2>
+          <h2 class="everything-about-business">Doing Business in geelong</h2>
+          <h2 class="everything-about-building">building in geelong</h2>
+          <h2 class="everything-about-council">the Geelong City Council</h2>
+          <ul class="living-spotlight">
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/lzhhzMgToD41dQfuYQ5YNZs8r1SCQWw3fJBpgKIH-0rYWfq8O9w8jVEnP_GK8xRSxFNH_jXLI2X7LMK1kKM9fPqvpqMboBKEdyF52FzgAW4_gp5XtLeC2fqH0V2xNbv9azTLlOLu0221pTjV_SMwiJQIhGCbH-jQrDq2d9TksdTUestXcrPmtquTGCxcUQFHO_sQBhkXu3KMzJmxXKt6FHPsCTnDnZ9HiIQYgyyauy6DHgkR0CczcRHtqQpFV27wdaI2QLx-XtfuPnC7sVGpS3evHeIlCXrbvVddZiwCAN188D30Yxd2LsI-ngtK9f1DGz6wKNvNTz8z2BVzJCqSmua9N3EO3IrGDSMIk4TTfo0CatA9x4pFldwL-wCuqn3aL48TOdICvytcDyPpg6nF4s8dmSg-4P1QwMDLp_3Lkf4uW41bIWrUdNWpBFpZA3ddIDyU5wYj8Cf-LN2cbOdsF6N3NZL4bYInghhXEEigTD9eAzR5kJ6i4FL358rl8_cvnEjW_JckSLOJ6_Th4LzSWi_NEwgvpiztaXdMFvD-d2lFYF0jWr2c3AESrYwtpd2HfMd373zUraRL8AFDWFE0KPVrh4qyoOF94T_zPyY4ZcvuNiWX1djjIr8PgOiRzQr-YE1hD3Z6VZCuGX1_cS0M0PE6uvyq3_Dht-JLAdWedcCZ5-PkJrC5t88_IuwHaSfjTI1p-zqp--_J8McMYlnYe6oT=s512-no?authuser=0"
+                alt="rubbish"
+                class="spotlight-img"
+              />
+              <div>
+                <p>
+                  waste &<br />
+                  Recycling
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/b9laBSABDHiCsC3G4SdCa29jpuHhT2UHiAAUUtNBWwTXHwFPG8dHomAa17GFhtzy_vahH8641Lckg-tmC7JYOisZ6L6GC7uI2UQwjnBCHX4XH7SW9uSmTOT4qnU7I_FHBFbhCncbpFQASqU7iXu-zo5Dca5GiBZUfAHRXHR6PYqswQvjigvlxxlobl8dxPxhnYv0cBzh8aIcmdoNJxBw7tjauGph8laBOiVXReTed8UKZhPd2IsWIUGhU9SYmpfxjl-IzbDJO-oEeo2A44F07Rh0vDNFXE36-Krw8ZynVNC7Axq8ooB11aAesZ8ljgmEMzHD4DmEG47njCdZA4OsDtPQ2NM7yh4OUq43mS9mnhUASNimnvrIJxweQWfVNRQCNhIDgVpHDwCA2aDGj-rA9jCgMMd0vVCMGuT7OkkK8Q5SGzn94t1wfSxge3NnNzOFIAToL6zN3JE9Nz44YA4oFWfYLdOMIymepk_R1rIc9Cy3AUo8mfRUR0TORJ6n3GItreoGHItDsH1heBq66bLuIDN2Pb7peiXf3ioyKL_FaA6RSiCGKppkEglpRg-LcAN9UKupgKwzLDqva8k0HmMTt87U93EHWxQmq_9bLjZS_OuiIwdWngohXSPVOq95T7IVJlVwvOH7-HZG6FOhoxzEbxYwpmq1mE6B0eUO5kFr-UGGgsPy5JVYeixnKasmsPdHK07PTUpLmDiinn519MRaXaTC=s512-no?authuser=0"
+                alt="pets"
+                class="spotlight-img"
+              />
+              <div>
+                <p>
+                  pets & <br />
+                  other Animals
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/Lj6YDyBj_REcs4_JXTKZLrAcYaA2mACI09fm0TM6PrBDgGjEjCI77wawxIMccwZ4QXzMYqliHCOy6S3wfUzlzqe9WzDL8xQSTKIfKD_Cr3vNl3oL0v5YvJub5g-PTBd-54bExc4NdKxbhBWA3-xswx1yKZPaVVjDUggJzip2dsKjBbQZqTlSihIfuH9miwEAJq3fSbIWg7YfS1g650K1ir9o2d7N_hv-9AYbAMwZruJuc3GQIxEJJJZNCQCjiHIo4QFoDOOCFOfahMlqlvJG9vsnEWzs8zDM_weh_Wk0cyCGJn6WxBwhDNaLwLSuq97rmbWBKPwKLKpHiZ0IZ4HamPL4cFT5-txFz9tjd2GdxmcIJQkoheXn60yo8Z0kuByYkhNhnpYCIvhRoPqE80j_H88DvJEFQwDO9CJmYvUwolLhzFhkhvpEWlJvDEZJvWn4OBw0uGOH3ToVKWekNKOIa3I4N32zbX00WrRmdQkRut17P2uvq5iGeODN83reHwC4FcIY7W7s6Csx-_g-kNTB8x6DY5Eja4ecOu3NB5DTLNprCFSNR5afRdI94UGQJBcwEVK2JEbAVLrzwdkWNq56fdAWx51disV-ONz3UkWZ6kPTCsTtuzCVT68fBzuDD_MZRJpy-3Wt-s83_NlbwiHT52LKC5Bb8iwelQJ50oNfcIsBXne4zER2b17nP7k3-VlOZITepyrxd4BNzPz_3XxOxMcH=s512-no?authuser=0"
+                alt=""
+                class="spotlight-img"
+              />
+              <div>
+                <p>
+                  swinning <br />
+                  & leisure
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/QDIkNRjtUn-DLgYkl-it0NapThZk8Lbd04HsTHukVhhQBYiSez0pI3bWhkCVSN9NK79lE4M2mLWYm_x8NpJdqPF6NNffmrJ6xsK4KwE0oguubWAUhyS53uWGQOWevegYSGVrMnjcknODnPOVLZMTkUcWDUZjuILMWktr_JMP7YEu5vaxL1KIsswpsABjQgnAQSjBHHiceTrnC7t7QdtnIDEuk8N6_r3kuQvLMfoA_QE47oFGcF16wJFmbI8sj2vescKaQMrMWORxGCmXEsjM-pMNbtOAvN7jJvSOY5sBHfJ86ZADXt2mtv25NZ2Oj9XqmWZnYtxgTGytlwFXlvrxx9P4YcoWWz3S-KT88pd58-FT1xczA9sCO9zpmdbnTvM5LOBNO43eWD5bFp_tjWfZpv85YxHgtSPPxWx1GcZ1rPUp7WVw37M0AvznWsrXSeqVuauCKAf9TahSVJxnuXvmBGNrAGCXHDMuqfsk6qIDAKj5Qy2ZGHuNhvSfDduSLxVrf9JlUg4AO8bd97Hlpj454WrAnaQ0XWaOYebYy_0dUogibZpXXYmYlS4vV_b6uohp0asfdVdN2HHuGNH1jGGwDnfIdmKbDd1B0Qp8AVuquAsRCbDlT3MdGhGuSgN5j8RoOJL-tQMhNstoDciWALzkAhYrRT6Yy2DEQvWx6oMffuZ02-vm3iezC5EU2HAW13P3wWMNV6nwNR4fIx_smAfihg4D=s512-no?authuser=0"
+                alt="online payment"
+                class="spotlight-img"
+              />
+              <div>
+                <p>online <br />payments</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/dxqkLdJPb5SRdKEeNOLakZmv0amykgeexXc7aj5F6ml6rJacOzH15gFlEstmWocDXMGvDEgSTeGT3VyFqoptUxD_qUoT3zVuHrTrzvdfBBGEp1cdW1GQzLngeGwjmdKsZ4Zol6j-rH7JiAfDZShDIfbzs1BNZNKRrSk-O3TYFmzgg6EskWxHIokKpjgNngV9wIWnjtAdyGFq7fKl9lJX6-d83X52yOVZe96NSRX47x5yOa6U3EFOEgD9JFfeJdPAGXtZAYReGJYTYOEiog2TLoiFF3nclr5GBfozck0aPoSVY7UFV9yi8IWBfkW5xWKyxHReOZRz3P9SWW5gH00ucYuevgzdhsfdi8BaT7vDwHS-39tCH2OcD_oegZhcja_DGA1kBCU0DlEhzqw4H9T8aF4U4cLdvgqoKDM_mjWPaLSfvt94VCeKPARgfPjGBZ7-0vwHPWkO-dHpMR5hgyOwvGDO5Yww0oIYg8gJxFEabJy4S6s6O4U-GnyoYi-B_Nc0Vthpe6nezwRw9106Ec4bjqZCQZ-HYbYMV_Ow8MzQDwADY2BYK35FOJ1I5XqefbHRtzaTodBN4SNhejrmTPkLA6xZwvv5zaWbYluzNxuLBxFAC7TGGUHs0qycAfYGjotYOu4pPMS2LipFsHZ-QdIFPxt9NwyZRaWrYNJOD-CqzPjumpTe83Qnfk2zF-RH5ALwiW45afdmrTDSycPbcMAdfc4p=s512-no?authuser=0"
+                alt="Parks"
+                class="spotlight-img"
+              />
+              <div>
+                <p>Parks & <br />reserves</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/jzke8TcrRQRZdKaf1dynJR14xCiZzCxgixb4K87QeK0ct2AD6VzkcjEF2Dpa7KDi5JwLp3dVQTEUiFfBvv8_EaKlAMnH84b1FnYPvApyqmlpaAK0qdKtwwnKr0-cdA71DI3G54JUSZ_mAWYLH2nnNF2fYN6PgoIDXHFE_q7-NLd9405HFHfqMspTEppVPPHhr1yZgDwGaH7WPUGEINyxgBwp4RonLBq4qV7S9ZwATd-r0TIg5FYelj8ZWvqbyF6YegKah7DbKmxayKT6kohyJy4uXkAsf8dN1ck_bU1kB10PeV2VbmiqH3sNrAM6rQfuSMxpAQWEXqARocyW2Jh8-NJ7Y-JabmNz9MYk3CRmKjO5TQjfzo9-iq68RZvM1hjMp4yicmenAjAR4o7NX_F_L0qmiWN05LfvjzDANGJtk8DMwY0M2YIPWuNuvOSu5c6xQv4m73UBF1KloSHRJzHvPU46kr8ZhT_okDY-INRZW0FAsO8G3cI4zT9sh9MbX7szv34SOe9JyVnI3ZatnnLPAmCnVOFC8R5Z93f45I8rIkGjvqATQm22EibwnGlzLt6ZjByQgjiOrpOSJexvIQzWGbMJINcO-rHfcFjPtzSJN4mcgK8U7Jr4mXMryQZ4GLpY66ZAkPVkNWSiH-DyB7eT4Zb99Hp3A6nAVr3flDrByXYffOX2fs53xVIxrN_ezDMsNDaj7cCyjOiN-Nu7qUiuJir3=s512-no?authuser=0"
+                alt="family"
+                class="spotlight-img"
+              />
+              <div>
+                <p>family <br />services</p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/6yivsfBldaC9zMU2WqNk0vX5C6m3SledUqgO_JTkJBE1HK4TVWpL77qQALVLQ7OjzPNk7NMv9W5QWoIIkAz7pZMghpbquLJhq0D0DMozZbiuoeNYqsddW1AcTmRn2a99q2CDgpR8lUTFtd0S4bv4oUW42FNG1dr3calB-s87YL3tb8QrxfWsS9H_hZBDPZuwaiPD9doBGv-k57QcTxbDM6qIU3cksrnb3wKzWK87ivS8ZHDcqjrjVFFnl_AWrGB1AZc5OizJCuwoigyC13yOsDwp6vQB2ps0S4NLrrJqi-vlbzjeNQ1YGVFs6_-hEdd0lcegULCaEC0ZJOumEU6hQlNghPPrYjv8yYH6ef49BzSC7Q_JaKTaE57q8qLSC_t6c5MofHFaUw2bpJ1GeXv7P_pI15tUvkTjZKIItd5u4KczEtIxqFMcCVGYb8UZhNOmM7M7kLnWg6aFFIeQtj3je0OHx9wqs4hkGyFo1YvTYKbz4xJ7zDU4VIDHmLqq6jgsv5uSzqS0w6tAKJ5SIGPPJFhWUU6SyuDWjSD5ohXRz3oPlmSLojidKgpU-uxzWFz8hphjzfu1XvxaHJO65AsC0hEYHBC5CGjXQeK92MxQy8qIU8ktJrkdwkA_XEunL5wKd5lbX2P-ZrEBtA0LFu43CjrsFk5IzAOebLE9hh6cy5iSeUgsXEEg4SU52gj6rsMaDljYnZW0tOThc0cFuCvN1JN6=s512-no?authuser=0"
+                alt="Roads"
+                class="spotlight-img"
+              />
+              <div>
+                <p>
+                  Roads <br />
+                  
+                </p>
+              </div>
+            </li>
+            <li>
+              <img
+                src="https://lh3.googleusercontent.com/ZiPsPvNOZOgMEY6VtvkOTHs22IiHgk-8IjrW_fyaxup01PuBEmm_toSkOXE3SolJeiTUIWAVsVUUGPTudlbyV8ALHT6muU51FeiM03hysD16A67f5LFIJWQ8lBHBV46fX_IRMDBt6Pz9h-leRTClALyxETd343vhpv9V8z1eB6DdA5gLgT2i4initLmoWtMvzny8s3dPaHujabdn0G0R-W8rfYWouF1BrNKzeXqw1zXigaBvnRwZ-DZeVGFCavwAflieMz5cKeR5QBtqrz7x83i448hPlS5tOKefAYH3_-PKoSY9jdBIxLgm-vqvunQngoJjYXqAD80nYduFvqarUHDeqI--z1BRkRtvSB8ysZ9cNYv6ChX1iWn4iQbKPjykxWILBw775t0ddv-6UNoD_Ynwoq8-3TrM81zWDGKDbGgDOU5nexuqHLiDLO9ML2ve65JrjFfV5cFM0o1WDvxatNzTjIheNi4_YSf8FTF9UzqLOPrqU5mWztOXDflDu0iYZis5KGn6-CAFWXcGudQYCsP5rDamg01A2D4dbPNY9t6QCEoQMfTbKZ4Z9s8JvRmTktipayPnl37-TbR3b51aqtONwA-_vKIcer7J8z2dBpSCOWbp0eN4nMpDxrl31-B-stXJjjD3tlqc0vuEgu3HOaJC8ECluFSdCp0XEZn9WAkgfyugVHZ4oICVEReM5b5t2pv6Uu99zG2up17GaHRrDyMz=s512-no?authuser=0"
+                alt="parking"
+                class="spotlight-img"
+              />
+              <div>
+                <p>parking in <br />geelong</p>
+              </div>
+            </li>
+          </ul>
+        <ul class="business-spotlight">
+          <li>
+          <img
+            src="https://lh3.googleusercontent.com/1vHDoP6OfUzPsFNOx1osaLEgk-e3frCnYbalE9gEWHse-xMMLdhyX-eq_I_6S-WfynX5ICls2CJjmvmn8lgEQLzzat_xjk81A5QaCAtcOOhVQtnK1D7aSZfhlD_oBJ2poC_S8Gl_SuiH4kfwgBn-L9W7opAfRmeyJj94QjFOpAWOoUULyiNCJTxLpDHOsDmhlPenpMY7OGIRBG-uWTpfkhXD31_S51KnkK0HVNu-PbwfbOBb38WKC2IU9zUSDFBLjLqI2QpPGoMCmcLjqh7CN4pBalUAPNwqBWWIr9ObBWTplFcQF_MuXjV7Ys9Fq2Aq11l7ispD0-fJvtHDZtaD0g3xdRDZe4WQntch_19I6Sa-i9uapxU7AV_gVzcIMD8H-DI5Llrya3AvgYrG4obIvF2ygq19j9WNmVcneuF140KhAzH2xPr_ZKiUP_I7FzkQocpAEiTevZYxyP47eH_Y6QkY3bc_cpdaZA8LX4hEwCFO0h95sZb8HQoBlvChH0bA6wxOTv-5l9hGJSiSiOWA0byUCyO3yAq31s7JaTHN6MIwW78cvNDpqfkWitZNqlAMYjkKtLfVgnkRUNuJg5hGC0pgf-YSQja2DpwPZ9Ok42I-GlTnQH5simHQyMvzJjlkwPLU8TV8Z5EmZ-GCx-ZMmmtXjxT6xDpOgPt2-C3uS-YXbycAPTnONhfEO7R12EVPHWrVOwlgOdSoLbYAL50dYGph=s512-no?authuser=0"
+            alt="covid news"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              latest<br />
+              covid news
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/dKkyhL0.pnghttps://i.imgur.com/dKkyhL0.png"
+            alt="pets"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              pets & <br />
+              other Animals
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/FLR1h8s.png"
+            alt=""
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              swinning <br />
+              & leisure
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/mhOru3m.png"
+            alt="online payment"
+            class="spotlight-img"
+          />
+          <div>
+            <p>online <br />payments</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/xXy0TPj.png"
+            alt="Parks"
+            class="spotlight-img"
+          />
+          <div>
+            <p>Parks & <br />reserves</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/56l4gXO.png"
+            alt=""
+            class="spotlight-img"
+          />
+          <div>
+            <p>family <br />services</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/7lbTkp3.png"
+            alt="Parking"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              waste & <br />
+              Recycling
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/TNDWlLZ.png"
+            alt="Roads"
+            class="spotlight-img"
+          />
+          <div>
+            <p>parking in <br />geelong</p>
+          </div>
+        </li></ul>
+        <ul class="building-spotlight">
+        <li>
+          <img
+            src="https://imgur.com/Z3kVp7S.png"
+            alt="rubbish"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              waste &<br />
+              Recycling
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/dKkyhL0.pnghttps://i.imgur.com/dKkyhL0.png"
+            alt="pets"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              pets & <br />
+              other Animals
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/FLR1h8s.png"
+            alt=""
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              swinning <br />
+              & leisure
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/mhOru3m.png"
+            alt="online payment"
+            class="spotlight-img"
+          />
+          <div>
+            <p>online <br />payments</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/xXy0TPj.png"
+            alt="Parks"
+            class="spotlight-img"
+          />
+          <div>
+            <p>Parks & <br />reserves</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/56l4gXO.png"
+            alt=""
+            class="spotlight-img"
+          />
+          <div>
+            <p>family <br />services</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/7lbTkp3.png"
+            alt="Parking"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              waste & <br />
+              Recycling
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/TNDWlLZ.png"
+            alt="Roads"
+            class="spotlight-img"
+          />
+          <div>
+            <p>parking in <br />geelong</p>
+          </div>
+        </li></ul>
+        <ul class="council-spotlight"><li>
+          <img
+            src="https://imgur.com/Z3kVp7S.png"
+            alt="rubbish"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              waste &<br />
+              Recycling
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/dKkyhL0.pnghttps://i.imgur.com/dKkyhL0.png"
+            alt="pets"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              pets & <br />
+              other Animals
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/FLR1h8s.png"
+            alt=""
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              swinning <br />
+              & leisure
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/mhOru3m.png"
+            alt="online payment"
+            class="spotlight-img"
+          />
+          <div>
+            <p>online <br />payments</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/xXy0TPj.png"
+            alt="Parks"
+            class="spotlight-img"
+          />
+          <div>
+            <p>Parks & <br />reserves</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/56l4gXO.png"
+            alt=""
+            class="spotlight-img"
+          />
+          <div>
+            <p>family <br />services</p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/7lbTkp3.png"
+            alt="Parking"
+            class="spotlight-img"
+          />
+          <div>
+            <p>
+              waste & <br />
+              Recycling
+            </p>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://imgur.com/TNDWlLZ.png"
+            alt="Roads"
+            class="spotlight-img"
+          />
+          <div>
+            <p>parking in <br />geelong</p>
+          </div>
+        </li></ul>
+        </div>
+        <div class="desktop-search">
+          
+            <div class="topnav">
+            
+            <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search"></i></button>
+          </div>
+        </div>
+        <div class="spotlight-card-container">
+          <div class="spotlight-card search">
+            <div class="card-header">
+              <span class="material-icons">
+                search
+                </span><pre> </pre><h4>Search</h4></div>
+            <div class="card-content"> <div class="topnav">
+              
+              <input type="text" placeholder="Search.."><pre> </pre><button type="submit"><i class="fa fa-search"></i></button>
+            </div> </div>
+          </div>
+          <div class="spotlight-card pay-online">
+            <div class="card-header">
+              <span class="material-icons">
+                payment
+                </span><pre> </pre><h4>Pay Online</h4></div>
+            <div class="card-content"><p>A new service to make your life easier</p><button class="find-more">find out more</button></div>
+          </div>
+          <div class="spotlight-card what-on">
+            <div class="card-header"><span class="material-icons">
+              local_bar
+              </span><pre> </pre><h4>What's on Geelong</h4></div>
+            <div class="card-content"><p>Enjoy the best activities in Geelong</p><button class="find-more">find out more</button></div>
+          </div>
+          <div class="spotlight-card visit">
+            <div class="card-header"><span class="material-icons">
+              card_travel
+              </span> <pre> </pre>
+              </pre><h4>Visit Geelong</h4></div>
+            <div class="card-content"><p>Discover Geelong's best attractions</p><button class="find-more">find out more</button></div>
+          </div>
+        </div>
+        <div class="spotlight-footer">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.7 129.8">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                }
+              </style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="words">
+                <g id="words-2" data-name="words">
+                  <path
+                    class="cls-1"
+                    d="M256.4 93.7v-1.4h-12.5v1.4c5.3.4 5.3 4.7 5.3 8.9v15.9s-22.6-26.1-22.8-26.2h-11.2v1.4c2.9.3 3.8 1.5 5.6 3.9l.1.1v22.7c0 3.9-.4 6.5-5 7.1v1.4h12.5v-1.4c-5.4-.4-5.4-5.1-5.4-9.2V100s25.9 29.4 26.1 29.7h2.2V103c0-1.9 0-5.4.9-7.1s2.7-1.9 4.2-2.2M305.5 113.8v-1.5h-17.6v1.6c4.1.5 5 1.5 5 5.6 0 5.4-2.6 7.9-8.4 7.9-8.9 0-12.1-9.2-12.1-17.7 0-4.4.9-18.7 12.6-18.7 5.7 0 10 3.7 11.8 10.1h2.1V89h-2.5a1.09 1.09 0 0 0-.1.5 2.29 2.29 0 0 1-1.5 1.2 3.91 3.91 0 0 1-2.7-.2 19.72 19.72 0 0 0-9.1-1.9c-11.9 0-20.5 9-20.5 21.3 0 12.1 8 19.9 20.4 19.9a24.48 24.48 0 0 0 9.7-2.1 39.29 39.29 0 0 1 9-2.1v-7.1c0-2.8.2-4.5 3.9-4.7M19.2 65.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.9a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.7v-1h-.3c-.6 0-1.1 0-1.2-.4a7.84 7.84 0 0 1-.2-2.2v-4.9a7.84 7.84 0 0 1 .2-2.2c.1-.4.6-.4 1.2-.4h.3v-1ZM48.6 65.1v.9h.4c.6.1.9.1.9.4s-.2.9-1.6 3.2c0 .1-.6.9-.9 1.4-.3-.6-2-3.7-2-3.7s-.2-.5-.4-.9v-.2c0-.1.1-.1.2-.2a4.91 4.91 0 0 1 1.1-.1V65H41v.9a2.14 2.14 0 0 1 .6.1 4.33 4.33 0 0 1 .5.1.1.1 0 0 1 .1.1c.5.6 3.6 6.2 3.6 6.2v2c0 1.5 0 1.5-1.5 1.6H44v1h5.8v-.9h-.3c-1.4-.1-1.4-.1-1.4-1.6v-2.3l2.9-4.8c.5-.9.8-1.3 1.6-1.4h.3v-1h-4.3ZM111.2 75.2s-2.6-2.9-3.3-3.8a3.14 3.14 0 0 0 2.9-3.1c0-3.1-3.2-3.1-4.2-3.1h-5.4v1h.3c.6 0 1 0 1.1.4a15.48 15.48 0 0 1 .1 2.2v4.9a15.48 15.48 0 0 1-.1 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.6v-1h-.3c-.6 0-1 0-1.2-.4a15.48 15.48 0 0 1-.1-2.2V72c.3 0 .4.1.7.4l.2.3 2.9 3.5.9 1.1h3.3v-.9h-.2a3.25 3.25 0 0 1-1.7-1.2m-6.2-9h1a2.05 2.05 0 0 1 2.1 2.3c0 2-1 2.2-3.1 2.2v-4.5M177.9 76.1a2 2 0 0 1-1.5-.9s-2.6-2.9-3.3-3.8a3.14 3.14 0 0 0 2.9-3.1c0-3.1-3.2-3.1-4.2-3.1h-5.4v1h.3c.6 0 1 0 1.1.4a15.48 15.48 0 0 1 .1 2.2v4.9a15.48 15.48 0 0 1-.1 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.6v-1h-.3c-.6 0-1 0-1.2-.4a15.48 15.48 0 0 1-.1-2.2V72c.3 0 .4.1.7.4l.2.2 2.9 3.5.9 1.1h3.3v-.9Zm-7.7-9.9h1a2.05 2.05 0 0 1 2.1 2.3c0 2-.9 2.2-3.2 2.2v-4.5M123.9 73.8v.3c-.2 1.8-1.1 2-2.9 2.1-.7 0-1.6 0-2-.5-.3-.3-.3-1.1-.3-1.6v-2.5c1.5 0 2 .2 2.2 1.6v.2h.9v-5.1h-1v.3c-.1 1.1-.3 1.9-2.2 1.9v-4.2h1.4c1.8 0 2.5.1 2.8 1.9v.2h.9v-3.2h-9.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.8a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h10.1v-3.4ZM163 73.7v.3c-.2 1.8-1.1 2-2.9 2.1-.7 0-1.6 0-2-.5-.3-.3-.3-1.1-.3-1.6v-2.5c1.5 0 2.1.2 2.2 1.6v.2h.9v-5.1h-1v.3c-.1 1.1-.3 1.9-2.2 1.9v-4.2h1.4c1.7 0 2.5.1 2.8 1.9v.2h.9v-3.2h-9.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.8a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h10.1v-3.4ZM137.8 75.7a1.46 1.46 0 0 1-.3-.5l-4.1-10.3h-1l-2.7 6.9-.7 1.6-.7 1.7a1.5 1.5 0 0 1-1.4 1.1h-.3v.9h4.3v-1h-.5c-.7 0-.9-.1-.9-.4a7.86 7.86 0 0 1 .7-2.2l.1-.3a.31.31 0 0 1 .1-.2h3.9c.1.2 1 2.8 1 2.8 0 .2-.2.4-1 .4h-.4v1h5.5v-.9h-.3c-.5-.2-1-.2-1.3-.6m-4-3.9h-3c.2-.5 1.2-3 1.5-3.8.3.8 1.3 3.4 1.5 3.8M93.9 72.7h.3c1 .1 1.2.2 1.2 1.2 0 1.9-1.4 2.3-2.6 2.3-3.3 0-3.6-3.4-3.6-4.8 0-2.5.7-5.5 3.8-5.5a3 3 0 0 1 3.1 3.1v.3h1.1v-4h-.7l-.1.2c-.1.1-.4.2-.9 0a6.71 6.71 0 0 0-2.8-.6 6.15 6.15 0 0 0-6.3 6.5c0 3.5 2.4 5.9 6.1 5.9a5.55 5.55 0 0 0 2.8-.7l.3-.2a3.15 3.15 0 0 1 2-.5h.3v-2.1c0-.4 0-.7.2-.9s.9-.2.9-.2v-.9h-5.1ZM139.9 65.1v3.3h1v-.3c.1-1.8.6-1.9 2.3-1.9h.2a3.08 3.08 0 0 1 1 .1v8.3c0 1.2-.2 1.5-1.6 1.5h-.3v1h6.2v-1h-.3c-1.5-.1-1.6-.4-1.6-1.5v-8.2a2.81 2.81 0 0 1 1.1-.1c1.7 0 2.3.1 2.3 1.9v.3h1v-3.3h-11.3ZM27.4 65.1v3.3h1v-.3c.1-1.8.6-1.9 2.3-1.9h.2a3.08 3.08 0 0 1 1 .1v8.3c0 1.2-.2 1.5-1.6 1.5h-.2l-.1.2v.7h6.2v-1h-.3c-1.5-.1-1.6-.4-1.6-1.5v-8.2a2.81 2.81 0 0 1 1.1-.1c1.7 0 2.3.1 2.3 1.9v.3h1v-3.3ZM15.8 72.8c-.5 1.9-1.2 3.6-3.5 3.6-3.5 0-3.8-3.9-3.8-5.1s.3-5.3 3.7-5.3a3.29 3.29 0 0 1 3.4 3v.2h.9v-4h-.8l-.2.5a.52.52 0 0 1-.5-.1 5.92 5.92 0 0 0-2.9-.7 6.09 6.09 0 0 0-6.3 6.3 5.85 5.85 0 0 0 6.2 6.1 6 6 0 0 0 3.3-.9c.3-.1.4-.1.5 0l.2.5h.7v-4.3h-.8ZM64.1 64.9a6.39 6.39 0 0 0-6.6 6.2 6.51 6.51 0 0 0 13-.2 6.18 6.18 0 0 0-6.4-6M64 66c2.8 0 3.8 2.6 3.8 5.1 0 1.2-.3 5.2-3.7 5.2-3.6 0-3.9-3.9-3.9-5.1 0-2.4 1-5.2 3.8-5.2M71.8 65.1v.8h.2c.6 0 1.1 0 1.3.5a8.2 8.2 0 0 1 .2 2.2v4.9a9 9 0 0 1-.2 2.3c-.2.4-.7.5-1.3.5h-.2v.8h5.8v-.8h-.5c-.6 0-1 0-1.2-.4a7.84 7.84 0 0 1-.2-2.2v-2c1.5 0 2.2.1 2.4 1.7v.2h.8v-5h-.8v.2c-.1 1.1-.3 2-2.4 1.9v-4.5h1.2a6.61 6.61 0 0 1 2.5.3c.7.3.8.9 1 1.6l.1.3h.8v-3.2h-9.5ZM190.1 91.8c-12.1 0-20.6 7.8-20.6 18.8s8.6 18.8 20.4 18.8c10.3 0 20.7-6.5 20.7-18.8.1-11-8.4-18.8-20.5-18.8m-.1 35.8c-10.3 0-11.4-12.1-11.4-17.3 0-6.2 1.5-16.6 11.4-16.6 7.5 0 11.7 6.1 11.7 17.3 0 10.9-4.1 16.6-11.7 16.6M131.8 92.3v1.3c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3h32.7v-10h-1.4c-1.6 6.1-4.4 8.2-11 8.2-2.7 0-4.4-.5-5.5-1.6-1.6-1.6-1.6-4.3-1.6-7.7v-16.8c0-2.9 0-4.9 1.3-6.2.8-.8 2.1-1.2 4.1-1.1v-1.4h-18c-.1.2-.4.2-.6.2M49.2 92.3v1.4c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3h32.1v-10.1h-1.6c-1.5 6.2-4 8.3-10.5 8.3-2.6 0-4.8 0-5.7-1.1-1.5-1.5-1.2-4.5-1.2-7.6V111h.4c5 0 6.9.9 8 6.1h1.6v-14h-1.6c-.3 5-3.3 6.1-8 6.1h-.4V98.4a19.54 19.54 0 0 1 .1-3.6c.1-.7.6-.6 5.1-.6 5.9 0 8.9 2.2 9.8 7.3H79v-9.3c-3.2.1-29.2.1-29.8.1M89.9 92.3v1.4c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3H122v-10.1h-1.6c-1.4 6.2-4 8.3-10.5 8.3-2.6 0-4.8 0-5.7-1.1-1.5-1.5-1.2-4.5-1.2-7.6V111h.4c5 0 6.9.9 8 6.1h1.6v-14h-1.6c-.3 5-3.3 6.1-8 6.1h-.4V98.4a19.54 19.54 0 0 1 .1-3.6c.1-.7.6-.6 5.1-.6 5.9 0 8.9 2.2 9.8 7.3h1.7v-9.3c-3.2.1-29.2.1-29.8.1M42.8 113.8v-1.5H25.2v1.6c4.1.5 5 1.5 5 5.6 0 5.4-2.6 7.9-8.4 7.9-8.9 0-12.1-9.2-12.1-17.7 0-4.4.9-18.7 12.6-18.7 5.8 0 10 3.7 11.8 10.1h2.1V89h-2.5a1.09 1.09 0 0 0-.1.5 2.36 2.36 0 0 1-1.4 1.2 3.91 3.91 0 0 1-2.7-.2 19.57 19.57 0 0 0-9-1.9C8.6 88.6 0 97.6 0 109.9c0 12.1 8 19.9 20.4 19.9a24.48 24.48 0 0 0 9.7-2.1 39.29 39.29 0 0 1 9-2.1v-7.1c-.1-2.8.1-4.5 3.7-4.7"
+                  />
+                </g>
+              </g>
+              <g id="flag">
+                <g id="flag-2" data-name="flag">
+                  <path
+                    class="cls-1"
+                    d="M432.6 39.9c-16.1 0-19.3 12.1-32.3 12.1h-79.8C301.2 52 299 64.1 288 64.1h-99.3l-5.8 13h83.3C288.1 77.1 296 65 296 65h82.4c23 0 31.1-12.1 31.1-12.1h107.4l5.8-13ZM352.8 0h-3.63c-20 0-22.31 12.55-33.72 12.55h-103L206.4 26h86.43c22.72 0 30.92-12.55 30.92-12.55h23ZM448.6 13.9h-4.2c-16.1 0-19.3 12.1-32.3 12.1h-79.8c-19.3 0-21.5 12.1-32.5 12.1h-99.3l-5.8 13H278c21.9 0 29.8-12.1 29.8-12.1h82.4c23 0 31.1-12.1 31.1-12.1h21.3Z"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="site-container">
+     <a class="page-up" href="#anchor"><i  class="fas fa-chevron-circle-up" ></i></a>
+      <header>
+        <div class="header" id="myHeader">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.7 129.8">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                }
+              </style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="words">
+                <g id="words-2" data-name="words">
+                  <path
+                    class="cls-1"
+                    d="M256.4 93.7v-1.4h-12.5v1.4c5.3.4 5.3 4.7 5.3 8.9v15.9s-22.6-26.1-22.8-26.2h-11.2v1.4c2.9.3 3.8 1.5 5.6 3.9l.1.1v22.7c0 3.9-.4 6.5-5 7.1v1.4h12.5v-1.4c-5.4-.4-5.4-5.1-5.4-9.2V100s25.9 29.4 26.1 29.7h2.2V103c0-1.9 0-5.4.9-7.1s2.7-1.9 4.2-2.2M305.5 113.8v-1.5h-17.6v1.6c4.1.5 5 1.5 5 5.6 0 5.4-2.6 7.9-8.4 7.9-8.9 0-12.1-9.2-12.1-17.7 0-4.4.9-18.7 12.6-18.7 5.7 0 10 3.7 11.8 10.1h2.1V89h-2.5a1.09 1.09 0 0 0-.1.5 2.29 2.29 0 0 1-1.5 1.2 3.91 3.91 0 0 1-2.7-.2 19.72 19.72 0 0 0-9.1-1.9c-11.9 0-20.5 9-20.5 21.3 0 12.1 8 19.9 20.4 19.9a24.48 24.48 0 0 0 9.7-2.1 39.29 39.29 0 0 1 9-2.1v-7.1c0-2.8.2-4.5 3.9-4.7M19.2 65.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.9a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.7v-1h-.3c-.6 0-1.1 0-1.2-.4a7.84 7.84 0 0 1-.2-2.2v-4.9a7.84 7.84 0 0 1 .2-2.2c.1-.4.6-.4 1.2-.4h.3v-1ZM48.6 65.1v.9h.4c.6.1.9.1.9.4s-.2.9-1.6 3.2c0 .1-.6.9-.9 1.4-.3-.6-2-3.7-2-3.7s-.2-.5-.4-.9v-.2c0-.1.1-.1.2-.2a4.91 4.91 0 0 1 1.1-.1V65H41v.9a2.14 2.14 0 0 1 .6.1 4.33 4.33 0 0 1 .5.1.1.1 0 0 1 .1.1c.5.6 3.6 6.2 3.6 6.2v2c0 1.5 0 1.5-1.5 1.6H44v1h5.8v-.9h-.3c-1.4-.1-1.4-.1-1.4-1.6v-2.3l2.9-4.8c.5-.9.8-1.3 1.6-1.4h.3v-1h-4.3ZM111.2 75.2s-2.6-2.9-3.3-3.8a3.14 3.14 0 0 0 2.9-3.1c0-3.1-3.2-3.1-4.2-3.1h-5.4v1h.3c.6 0 1 0 1.1.4a15.48 15.48 0 0 1 .1 2.2v4.9a15.48 15.48 0 0 1-.1 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.6v-1h-.3c-.6 0-1 0-1.2-.4a15.48 15.48 0 0 1-.1-2.2V72c.3 0 .4.1.7.4l.2.3 2.9 3.5.9 1.1h3.3v-.9h-.2a3.25 3.25 0 0 1-1.7-1.2m-6.2-9h1a2.05 2.05 0 0 1 2.1 2.3c0 2-1 2.2-3.1 2.2v-4.5M177.9 76.1a2 2 0 0 1-1.5-.9s-2.6-2.9-3.3-3.8a3.14 3.14 0 0 0 2.9-3.1c0-3.1-3.2-3.1-4.2-3.1h-5.4v1h.3c.6 0 1 0 1.1.4a15.48 15.48 0 0 1 .1 2.2v4.9a15.48 15.48 0 0 1-.1 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.6v-1h-.3c-.6 0-1 0-1.2-.4a15.48 15.48 0 0 1-.1-2.2V72c.3 0 .4.1.7.4l.2.2 2.9 3.5.9 1.1h3.3v-.9Zm-7.7-9.9h1a2.05 2.05 0 0 1 2.1 2.3c0 2-.9 2.2-3.2 2.2v-4.5M123.9 73.8v.3c-.2 1.8-1.1 2-2.9 2.1-.7 0-1.6 0-2-.5-.3-.3-.3-1.1-.3-1.6v-2.5c1.5 0 2 .2 2.2 1.6v.2h.9v-5.1h-1v.3c-.1 1.1-.3 1.9-2.2 1.9v-4.2h1.4c1.8 0 2.5.1 2.8 1.9v.2h.9v-3.2h-9.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.8a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h10.1v-3.4ZM163 73.7v.3c-.2 1.8-1.1 2-2.9 2.1-.7 0-1.6 0-2-.5-.3-.3-.3-1.1-.3-1.6v-2.5c1.5 0 2.1.2 2.2 1.6v.2h.9v-5.1h-1v.3c-.1 1.1-.3 1.9-2.2 1.9v-4.2h1.4c1.7 0 2.5.1 2.8 1.9v.2h.9v-3.2h-9.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.8a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h10.1v-3.4ZM137.8 75.7a1.46 1.46 0 0 1-.3-.5l-4.1-10.3h-1l-2.7 6.9-.7 1.6-.7 1.7a1.5 1.5 0 0 1-1.4 1.1h-.3v.9h4.3v-1h-.5c-.7 0-.9-.1-.9-.4a7.86 7.86 0 0 1 .7-2.2l.1-.3a.31.31 0 0 1 .1-.2h3.9c.1.2 1 2.8 1 2.8 0 .2-.2.4-1 .4h-.4v1h5.5v-.9h-.3c-.5-.2-1-.2-1.3-.6m-4-3.9h-3c.2-.5 1.2-3 1.5-3.8.3.8 1.3 3.4 1.5 3.8M93.9 72.7h.3c1 .1 1.2.2 1.2 1.2 0 1.9-1.4 2.3-2.6 2.3-3.3 0-3.6-3.4-3.6-4.8 0-2.5.7-5.5 3.8-5.5a3 3 0 0 1 3.1 3.1v.3h1.1v-4h-.7l-.1.2c-.1.1-.4.2-.9 0a6.71 6.71 0 0 0-2.8-.6 6.15 6.15 0 0 0-6.3 6.5c0 3.5 2.4 5.9 6.1 5.9a5.55 5.55 0 0 0 2.8-.7l.3-.2a3.15 3.15 0 0 1 2-.5h.3v-2.1c0-.4 0-.7.2-.9s.9-.2.9-.2v-.9h-5.1ZM139.9 65.1v3.3h1v-.3c.1-1.8.6-1.9 2.3-1.9h.2a3.08 3.08 0 0 1 1 .1v8.3c0 1.2-.2 1.5-1.6 1.5h-.3v1h6.2v-1h-.3c-1.5-.1-1.6-.4-1.6-1.5v-8.2a2.81 2.81 0 0 1 1.1-.1c1.7 0 2.3.1 2.3 1.9v.3h1v-3.3h-11.3ZM27.4 65.1v3.3h1v-.3c.1-1.8.6-1.9 2.3-1.9h.2a3.08 3.08 0 0 1 1 .1v8.3c0 1.2-.2 1.5-1.6 1.5h-.2l-.1.2v.7h6.2v-1h-.3c-1.5-.1-1.6-.4-1.6-1.5v-8.2a2.81 2.81 0 0 1 1.1-.1c1.7 0 2.3.1 2.3 1.9v.3h1v-3.3ZM15.8 72.8c-.5 1.9-1.2 3.6-3.5 3.6-3.5 0-3.8-3.9-3.8-5.1s.3-5.3 3.7-5.3a3.29 3.29 0 0 1 3.4 3v.2h.9v-4h-.8l-.2.5a.52.52 0 0 1-.5-.1 5.92 5.92 0 0 0-2.9-.7 6.09 6.09 0 0 0-6.3 6.3 5.85 5.85 0 0 0 6.2 6.1 6 6 0 0 0 3.3-.9c.3-.1.4-.1.5 0l.2.5h.7v-4.3h-.8ZM64.1 64.9a6.39 6.39 0 0 0-6.6 6.2 6.51 6.51 0 0 0 13-.2 6.18 6.18 0 0 0-6.4-6M64 66c2.8 0 3.8 2.6 3.8 5.1 0 1.2-.3 5.2-3.7 5.2-3.6 0-3.9-3.9-3.9-5.1 0-2.4 1-5.2 3.8-5.2M71.8 65.1v.8h.2c.6 0 1.1 0 1.3.5a8.2 8.2 0 0 1 .2 2.2v4.9a9 9 0 0 1-.2 2.3c-.2.4-.7.5-1.3.5h-.2v.8h5.8v-.8h-.5c-.6 0-1 0-1.2-.4a7.84 7.84 0 0 1-.2-2.2v-2c1.5 0 2.2.1 2.4 1.7v.2h.8v-5h-.8v.2c-.1 1.1-.3 2-2.4 1.9v-4.5h1.2a6.61 6.61 0 0 1 2.5.3c.7.3.8.9 1 1.6l.1.3h.8v-3.2h-9.5ZM190.1 91.8c-12.1 0-20.6 7.8-20.6 18.8s8.6 18.8 20.4 18.8c10.3 0 20.7-6.5 20.7-18.8.1-11-8.4-18.8-20.5-18.8m-.1 35.8c-10.3 0-11.4-12.1-11.4-17.3 0-6.2 1.5-16.6 11.4-16.6 7.5 0 11.7 6.1 11.7 17.3 0 10.9-4.1 16.6-11.7 16.6M131.8 92.3v1.3c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3h32.7v-10h-1.4c-1.6 6.1-4.4 8.2-11 8.2-2.7 0-4.4-.5-5.5-1.6-1.6-1.6-1.6-4.3-1.6-7.7v-16.8c0-2.9 0-4.9 1.3-6.2.8-.8 2.1-1.2 4.1-1.1v-1.4h-18c-.1.2-.4.2-.6.2M49.2 92.3v1.4c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3h32.1v-10.1h-1.6c-1.5 6.2-4 8.3-10.5 8.3-2.6 0-4.8 0-5.7-1.1-1.5-1.5-1.2-4.5-1.2-7.6V111h.4c5 0 6.9.9 8 6.1h1.6v-14h-1.6c-.3 5-3.3 6.1-8 6.1h-.4V98.4a19.54 19.54 0 0 1 .1-3.6c.1-.7.6-.6 5.1-.6 5.9 0 8.9 2.2 9.8 7.3H79v-9.3c-3.2.1-29.2.1-29.8.1M89.9 92.3v1.4c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3H122v-10.1h-1.6c-1.4 6.2-4 8.3-10.5 8.3-2.6 0-4.8 0-5.7-1.1-1.5-1.5-1.2-4.5-1.2-7.6V111h.4c5 0 6.9.9 8 6.1h1.6v-14h-1.6c-.3 5-3.3 6.1-8 6.1h-.4V98.4a19.54 19.54 0 0 1 .1-3.6c.1-.7.6-.6 5.1-.6 5.9 0 8.9 2.2 9.8 7.3h1.7v-9.3c-3.2.1-29.2.1-29.8.1M42.8 113.8v-1.5H25.2v1.6c4.1.5 5 1.5 5 5.6 0 5.4-2.6 7.9-8.4 7.9-8.9 0-12.1-9.2-12.1-17.7 0-4.4.9-18.7 12.6-18.7 5.8 0 10 3.7 11.8 10.1h2.1V89h-2.5a1.09 1.09 0 0 0-.1.5 2.36 2.36 0 0 1-1.4 1.2 3.91 3.91 0 0 1-2.7-.2 19.57 19.57 0 0 0-9-1.9C8.6 88.6 0 97.6 0 109.9c0 12.1 8 19.9 20.4 19.9a24.48 24.48 0 0 0 9.7-2.1 39.29 39.29 0 0 1 9-2.1v-7.1c-.1-2.8.1-4.5 3.7-4.7"
+                  />
+                </g>
+              </g>
+              <g id="flag">
+                <g id="flag-2" data-name="flag">
+                  <path
+                    class="cls-1"
+                    d="M432.6 39.9c-16.1 0-19.3 12.1-32.3 12.1h-79.8C301.2 52 299 64.1 288 64.1h-99.3l-5.8 13h83.3C288.1 77.1 296 65 296 65h82.4c23 0 31.1-12.1 31.1-12.1h107.4l5.8-13ZM352.8 0h-3.63c-20 0-22.31 12.55-33.72 12.55h-103L206.4 26h86.43c22.72 0 30.92-12.55 30.92-12.55h23ZM448.6 13.9h-4.2c-16.1 0-19.3 12.1-32.3 12.1h-79.8c-19.3 0-21.5 12.1-32.5 12.1h-99.3l-5.8 13H278c21.9 0 29.8-12.1 29.8-12.1h82.4c23 0 31.1-12.1 31.1-12.1h21.3Z"
+                  />
+                </g>
+              </g>
+            </g>
+          </svg>
+          
+          <div class="show-menu">
+            <span class="material-icons"> menu </span>
+          </div>
+          <div class="close-menu hidden">
+            <span class="material-icons"> close </span>
+          </div>
+          <nav class="desktop-nav-bar">
+            <ul>
+              <a class="anchor" id='anchor'></a>
+              <!-- <li class="desktop-nav-list"><h6>Living in Geelong</h6></li>
+              <li class="desktop-nav-list"><h6>Business In Geelong</h6></li>
+              <li class="desktop-nav-list">
+                <h6>Building and Development</h6>
+              </li> -->
+              
+              <li class="desktop-nav-list"><h6>What's on Geelong</h6></li>
+              <li><div class="show-menu-two">
+                <span class="material-icons"> menu </span>
+              </div>
+              <div class="close-menu-two hidden">
+                <span class="material-icons"> close </span>
+              </div></li>
+              <li class="desktop-nav-list"><h6>Payments</h6></li>
+            </ul>
+            
+          </nav>
+
+          
+          <div class="header-search">
+            
+            <input type="text" placeholder="Search.."><button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+          </div>
+        
+        </div>
+        <div class="menu hidden">
+          <div class="mega-menu">
+            
+            <ul><h3>COVIDSAFE</h3>
+              <li>
+                <h4>What's Open – COVID-19</h4>
+                <p>summary of what's open,
+                  what's closed and what is
+                  operating differently.</p>
+              </li>
+              <li>
+                <h4>Current Health Advice</h4>
+                <p>For the latest information
+                  and advice about COVID-19
+                  in Victoria, restrictions, the
+                  vaccination program and
+                  local testing sites.</p>
+              </li>
+              <li>
+                <h4>Translated Information</h4>
+                <p>Information about COVID-19
+                  for people from culturally
+                  and linguistically diverse
+                  backgrounds.</p>
+              </li>
+              <li>
+                <h4>Our COVID-19 Response</h4>
+                <p>Find out how to reduce your
+                  household rubbish</p>
+              </li>
+              <li>
+                <h4>COVID support</h4>
+                <p>All related with the support
+                  for Business, Arts and more</p>
+              </li>
+            </ul>
+            <ul><h3>INTERNATIONAL</h3>
+              <li>
+                <h4>Geelong - City of Design</h4>
+                <p>The City of Greater Geelong
+                  applied to become a UNESCO
+                  Creative Cities Network City of
+                  Design in 2017 and was
+                  successful in its designation.</p>
+              </li>
+              <li>
+                <h4>Sectors</h4>
+                <p>Targeted areas crucial to
+                  growth of Geelong for business
+                  and investment.</p>
+              </li><br>
+              <h3>ROAD & STREETS</h3>
+              <li>
+                <h4>Report</h4>
+                <p>Report all issues and problems
+                  related to Geelong's roads.</p>
+              </li>
+              <li>
+                <h4>Amenities</h4>
+                <p>Everything related to street
+                  furniture, signage, street
+                  names and more.</p>
+              </li>
+              
+            </ul>
+            <ul><h3>FAMILIES</h3>
+              <li>
+                <h4>Children</h4>
+                <p>Child Care, Maternal and child
+                  health, Playgroups and more.</p>
+              </li>
+              <li>
+                <h4>Young people</h4>
+                <p>Youth support and activities,
+                  space and programs.</p>
+              </li>
+              <li>
+                <h4>Seniors</h4>
+                <p>Everything related to the
+                  wellbeing of senior citizens.</p>
+              </li>
+              <li>
+                <h4>Families</h4>
+                <p>Parenting services, Family
+                  violence, Health and wellbeing</p>
+              </li>
+            </ul>
+            <ul><h3>PARKING</h3>
+            <li>
+              <h4>Pay a Parking
+                Infringement or Fine</h4>
+              <p>There are several options
+                available to you to pay your
+                infringement or fine.</p>
+            </li>
+            <li>
+              <h4>Appeal against an
+                infringement or fine</h4>
+              <p>You may appeal or contest any
+                infringement notice you
+                receive from the City of
+                Greater Geelong.</p>
+            </li>
+            <li>
+              <h4>Apply for a City
+                Car Park Permit</h4>
+              <p>When you register for a car
+                park permit we will contact you
+                shortly to organise the permit.</p>
+            </li>
+            </ul>
+            <ul><h3>SWIM & LEISURE</h3>
+              <li>
+                <h4>Swimming & Leisure Centres</h4>
+                <p>Find all the aquatic and leisure
+                  centres in Geelong.</p>
+              </li>
+              <li>
+                <h4>Sports & Recreation</h4>
+                <p>Sporting, health and fitness
+                  facilities to support community
+                  wellbeing.</p>
+              </li>
+              <h3>PARKs</h3>
+              <li>
+                <h4>Paths, tracks and trails</h4>
+                <p>Explore the
+                  natural environment and it’s
+                  many popular attractions.</p>
+              </li>
+              <li>
+                <h4>Neighbourhood walks</h4>
+                <p>Connect with your
+                  neighbourhood by walking.</p>
+              </li>
+              <li>
+                <h4>Golf Courses</h4>
+                <p>City of Geelong managed golf
+                  courses</p>
+              </li>
+            </ul>
+        </div>
+          <!-- <h5>I'm a menu. i'll have content one day!</h5> -->
+        </div>
+      </header>
+      <div class="br-between-header-and-section"></div>
+      
+
+      <section class="section-one">
+        <!-- <div class='section-one-overlay'></div> -->
+        <div class="news-events-updates-container">
+          
+        <div class="">
+          <div class="news-events-updates">
+          <div class="news news-card-heading">- News -</div>
+          <div class="events news-card-heading">- Events -</div>
+          <div class="updates news-card-heading">- Updates -</div>
+          </div>
+          <div class="news-events-updates-cards">
+          
+            <div class="news-cards">          
+              <div class="cards">
+                <div  class="news-event-updates-card-header">news</div>
+                <button class="find-more">find out more</button></div>
+              <div class="cards">
+                <div class="news-event-updates-card-header">News</div>
+                <button class="find-more">find out more</button></div>
+              <div class="cards"><div class="news-event-updates-card-header">news</div>
+              <button class="find-more">find out more</button></div>
+            <button class="find-more">more news</button>
+            </div>
+
+
+            <div class="event-cards">
+              <div class="cards">
+                <div class="news-event-updates-card-header">Events</div>
+                <button class="find-more">find out more</button></div>
+              <div class="cards">
+                <div class="news-event-updates-card-header">events</div>
+                <button class="find-more">find out more</button></div>
+              <div class="cards"><div class="news-event-updates-card-header">events</div>
+              <button class="find-more">find out more</button></div>
+              <button class="find-more">more Events</button>
+            </div>
+
+          
+          <div class="update-cards">
+            <div class="cards">
+              
+              <div class="news-event-updates-card-header">updates</div>
+              <button class="find-more">find out more</button></div>
+            <div class="cards">
+              <div class="news-event-updates-card-header">updates</div>
+              <button class="find-more">find out more</button></div>
+            <div class="cards"><div class="news-event-updates-card-header">updates</div>
+            <button class="find-more">find out more</button></div>
+            <button class="find-more">more updates</button>
+          </div>
+
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, iste quod tempore dolor recusandae adipisci ad necessitatibus quia at possimus sapiente numquam cumque inventore ab officia, excepturi fuga cum!
+            <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi consectetur, iste quod tempore dolor recusandae adipisci ad necessitatibus quia at possimus sapiente numquam cumque inventore ab officia, excepturi fuga cum!
+          </p>
+          
+        </div>
+        </div>
+      </section>
+      <section class="section-two">
+        <div class="pay-online-pics">
+          <div class="payment-options"><img src="https://i2.wp.com/www.htxt.co.za/wp-content/uploads/2018/09/Mastercard-new-logo.jpg?fit=1920%2C1080&ssl=1" alt=""></div>
+          <div class="payment-options"><img src="https://www.financeservices.us/wp-content/uploads/2019/03/Visa-Card.png" alt=""></div>
+          <div class="payment-options"><img src="https://9to5mac.com/wp-content/uploads/sites/6/2019/03/paypal-logo.jpeg?quality=82&strip=all" alt=""></div>
+          <div class="payment-options"><img src="https://www.currencyfair.com/cf-content/uploads/2015/07/BPAY.gif" alt=""></div>
+        </div>
+        <div class="pay-online-words">
+          <h2>Try our new</h2><h1>payment solutions</h1>
+          <h3>pay rates, pets registration & more online</h3>
+          <br>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex eligendi iste id ut neque quo accusantium eum a ratione ipsa! Modi delectus molestiae qui quis esse mollitia! Eveniet, quaerat sequi.
+          <br>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta nostrum commodi excepturi amet! Tempora ipsam, quam est asperiores voluptatum corporis. Nostrum, labore ratione. Labore assumenda sit blanditiis dolores, adipisci omnis.
+          <br>
+          <br>
+          
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis possimus placeat enim amet sint nulla doloremque eius, sequi ea reiciendis facere incidunt! Aliquid repellendus, placeat reprehenderit ullam sequi explicabo officiis?
+          <br>
+          <button class="find-more-payments">find out more</button>
+        </div>
+      </section>
+
+      <section class="section-three"></section>
+      <!-- <div class='iframe' >
+        <h1>This Is Filler Content</h1>
+        <br>
+        <h1> Dog walking maps</h1>
+        <h3>Let us tell you where you can walk your dog.
+        <iframe src="https://www.google.com/maps/d/embed?mid=1g8Tbqc-cXIhSSXLFT0Wq4ksGNn5qOMKj" width="640" height="480"></iframe>
+      </div> -->
+
+
+
+      <!-- <section class="section-background"><div class="overlay-two"></div></section> -->
+ 
+      <div class="footer-margin"></div>
+      <footer>
+        <div>
+          <div>
+            <h4>
+              <pre> 
+Contact City of Geelong 
+03 5272 5272
+Wadawurrung Country
+PO Box 104, Geelong, Vic 3220 
+ABN: 18 374 210 672
+            </pre>
+            </h4>
+          </div> 
+            <div>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.7 129.8">
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: #fff;
+                }
+              </style>
+            </defs>
+            <g id="Layer_2" data-name="Layer 2">
+              <g id="words">
+                <g id="words-2" data-name="words">
+                  <path
+                    class="cls-1"
+                    d="M256.4 93.7v-1.4h-12.5v1.4c5.3.4 5.3 4.7 5.3 8.9v15.9s-22.6-26.1-22.8-26.2h-11.2v1.4c2.9.3 3.8 1.5 5.6 3.9l.1.1v22.7c0 3.9-.4 6.5-5 7.1v1.4h12.5v-1.4c-5.4-.4-5.4-5.1-5.4-9.2V100s25.9 29.4 26.1 29.7h2.2V103c0-1.9 0-5.4.9-7.1s2.7-1.9 4.2-2.2M305.5 113.8v-1.5h-17.6v1.6c4.1.5 5 1.5 5 5.6 0 5.4-2.6 7.9-8.4 7.9-8.9 0-12.1-9.2-12.1-17.7 0-4.4.9-18.7 12.6-18.7 5.7 0 10 3.7 11.8 10.1h2.1V89h-2.5a1.09 1.09 0 0 0-.1.5 2.29 2.29 0 0 1-1.5 1.2 3.91 3.91 0 0 1-2.7-.2 19.72 19.72 0 0 0-9.1-1.9c-11.9 0-20.5 9-20.5 21.3 0 12.1 8 19.9 20.4 19.9a24.48 24.48 0 0 0 9.7-2.1 39.29 39.29 0 0 1 9-2.1v-7.1c0-2.8.2-4.5 3.9-4.7M19.2 65.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.9a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.7v-1h-.3c-.6 0-1.1 0-1.2-.4a7.84 7.84 0 0 1-.2-2.2v-4.9a7.84 7.84 0 0 1 .2-2.2c.1-.4.6-.4 1.2-.4h.3v-1ZM48.6 65.1v.9h.4c.6.1.9.1.9.4s-.2.9-1.6 3.2c0 .1-.6.9-.9 1.4-.3-.6-2-3.7-2-3.7s-.2-.5-.4-.9v-.2c0-.1.1-.1.2-.2a4.91 4.91 0 0 1 1.1-.1V65H41v.9a2.14 2.14 0 0 1 .6.1 4.33 4.33 0 0 1 .5.1.1.1 0 0 1 .1.1c.5.6 3.6 6.2 3.6 6.2v2c0 1.5 0 1.5-1.5 1.6H44v1h5.8v-.9h-.3c-1.4-.1-1.4-.1-1.4-1.6v-2.3l2.9-4.8c.5-.9.8-1.3 1.6-1.4h.3v-1h-4.3ZM111.2 75.2s-2.6-2.9-3.3-3.8a3.14 3.14 0 0 0 2.9-3.1c0-3.1-3.2-3.1-4.2-3.1h-5.4v1h.3c.6 0 1 0 1.1.4a15.48 15.48 0 0 1 .1 2.2v4.9a15.48 15.48 0 0 1-.1 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.6v-1h-.3c-.6 0-1 0-1.2-.4a15.48 15.48 0 0 1-.1-2.2V72c.3 0 .4.1.7.4l.2.3 2.9 3.5.9 1.1h3.3v-.9h-.2a3.25 3.25 0 0 1-1.7-1.2m-6.2-9h1a2.05 2.05 0 0 1 2.1 2.3c0 2-1 2.2-3.1 2.2v-4.5M177.9 76.1a2 2 0 0 1-1.5-.9s-2.6-2.9-3.3-3.8a3.14 3.14 0 0 0 2.9-3.1c0-3.1-3.2-3.1-4.2-3.1h-5.4v1h.3c.6 0 1 0 1.1.4a15.48 15.48 0 0 1 .1 2.2v4.9a15.48 15.48 0 0 1-.1 2.2c-.1.4-.6.4-1.2.4h-.3v1h5.6v-1h-.3c-.6 0-1 0-1.2-.4a15.48 15.48 0 0 1-.1-2.2V72c.3 0 .4.1.7.4l.2.2 2.9 3.5.9 1.1h3.3v-.9Zm-7.7-9.9h1a2.05 2.05 0 0 1 2.1 2.3c0 2-.9 2.2-3.2 2.2v-4.5M123.9 73.8v.3c-.2 1.8-1.1 2-2.9 2.1-.7 0-1.6 0-2-.5-.3-.3-.3-1.1-.3-1.6v-2.5c1.5 0 2 .2 2.2 1.6v.2h.9v-5.1h-1v.3c-.1 1.1-.3 1.9-2.2 1.9v-4.2h1.4c1.8 0 2.5.1 2.8 1.9v.2h.9v-3.2h-9.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.8a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h10.1v-3.4ZM163 73.7v.3c-.2 1.8-1.1 2-2.9 2.1-.7 0-1.6 0-2-.5-.3-.3-.3-1.1-.3-1.6v-2.5c1.5 0 2.1.2 2.2 1.6v.2h.9v-5.1h-1v.3c-.1 1.1-.3 1.9-2.2 1.9v-4.2h1.4c1.7 0 2.5.1 2.8 1.9v.2h.9v-3.2h-9.1v1h.3c.6 0 1.1 0 1.2.4a7.84 7.84 0 0 1 .2 2.2v4.8a7.84 7.84 0 0 1-.2 2.2c-.1.4-.6.4-1.2.4h-.3v1h10.1v-3.4ZM137.8 75.7a1.46 1.46 0 0 1-.3-.5l-4.1-10.3h-1l-2.7 6.9-.7 1.6-.7 1.7a1.5 1.5 0 0 1-1.4 1.1h-.3v.9h4.3v-1h-.5c-.7 0-.9-.1-.9-.4a7.86 7.86 0 0 1 .7-2.2l.1-.3a.31.31 0 0 1 .1-.2h3.9c.1.2 1 2.8 1 2.8 0 .2-.2.4-1 .4h-.4v1h5.5v-.9h-.3c-.5-.2-1-.2-1.3-.6m-4-3.9h-3c.2-.5 1.2-3 1.5-3.8.3.8 1.3 3.4 1.5 3.8M93.9 72.7h.3c1 .1 1.2.2 1.2 1.2 0 1.9-1.4 2.3-2.6 2.3-3.3 0-3.6-3.4-3.6-4.8 0-2.5.7-5.5 3.8-5.5a3 3 0 0 1 3.1 3.1v.3h1.1v-4h-.7l-.1.2c-.1.1-.4.2-.9 0a6.71 6.71 0 0 0-2.8-.6 6.15 6.15 0 0 0-6.3 6.5c0 3.5 2.4 5.9 6.1 5.9a5.55 5.55 0 0 0 2.8-.7l.3-.2a3.15 3.15 0 0 1 2-.5h.3v-2.1c0-.4 0-.7.2-.9s.9-.2.9-.2v-.9h-5.1ZM139.9 65.1v3.3h1v-.3c.1-1.8.6-1.9 2.3-1.9h.2a3.08 3.08 0 0 1 1 .1v8.3c0 1.2-.2 1.5-1.6 1.5h-.3v1h6.2v-1h-.3c-1.5-.1-1.6-.4-1.6-1.5v-8.2a2.81 2.81 0 0 1 1.1-.1c1.7 0 2.3.1 2.3 1.9v.3h1v-3.3h-11.3ZM27.4 65.1v3.3h1v-.3c.1-1.8.6-1.9 2.3-1.9h.2a3.08 3.08 0 0 1 1 .1v8.3c0 1.2-.2 1.5-1.6 1.5h-.2l-.1.2v.7h6.2v-1h-.3c-1.5-.1-1.6-.4-1.6-1.5v-8.2a2.81 2.81 0 0 1 1.1-.1c1.7 0 2.3.1 2.3 1.9v.3h1v-3.3ZM15.8 72.8c-.5 1.9-1.2 3.6-3.5 3.6-3.5 0-3.8-3.9-3.8-5.1s.3-5.3 3.7-5.3a3.29 3.29 0 0 1 3.4 3v.2h.9v-4h-.8l-.2.5a.52.52 0 0 1-.5-.1 5.92 5.92 0 0 0-2.9-.7 6.09 6.09 0 0 0-6.3 6.3 5.85 5.85 0 0 0 6.2 6.1 6 6 0 0 0 3.3-.9c.3-.1.4-.1.5 0l.2.5h.7v-4.3h-.8ZM64.1 64.9a6.39 6.39 0 0 0-6.6 6.2 6.51 6.51 0 0 0 13-.2 6.18 6.18 0 0 0-6.4-6M64 66c2.8 0 3.8 2.6 3.8 5.1 0 1.2-.3 5.2-3.7 5.2-3.6 0-3.9-3.9-3.9-5.1 0-2.4 1-5.2 3.8-5.2M71.8 65.1v.8h.2c.6 0 1.1 0 1.3.5a8.2 8.2 0 0 1 .2 2.2v4.9a9 9 0 0 1-.2 2.3c-.2.4-.7.5-1.3.5h-.2v.8h5.8v-.8h-.5c-.6 0-1 0-1.2-.4a7.84 7.84 0 0 1-.2-2.2v-2c1.5 0 2.2.1 2.4 1.7v.2h.8v-5h-.8v.2c-.1 1.1-.3 2-2.4 1.9v-4.5h1.2a6.61 6.61 0 0 1 2.5.3c.7.3.8.9 1 1.6l.1.3h.8v-3.2h-9.5ZM190.1 91.8c-12.1 0-20.6 7.8-20.6 18.8s8.6 18.8 20.4 18.8c10.3 0 20.7-6.5 20.7-18.8.1-11-8.4-18.8-20.5-18.8m-.1 35.8c-10.3 0-11.4-12.1-11.4-17.3 0-6.2 1.5-16.6 11.4-16.6 7.5 0 11.7 6.1 11.7 17.3 0 10.9-4.1 16.6-11.7 16.6M131.8 92.3v1.3c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3h32.7v-10h-1.4c-1.6 6.1-4.4 8.2-11 8.2-2.7 0-4.4-.5-5.5-1.6-1.6-1.6-1.6-4.3-1.6-7.7v-16.8c0-2.9 0-4.9 1.3-6.2.8-.8 2.1-1.2 4.1-1.1v-1.4h-18c-.1.2-.4.2-.6.2M49.2 92.3v1.4c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3h32.1v-10.1h-1.6c-1.5 6.2-4 8.3-10.5 8.3-2.6 0-4.8 0-5.7-1.1-1.5-1.5-1.2-4.5-1.2-7.6V111h.4c5 0 6.9.9 8 6.1h1.6v-14h-1.6c-.3 5-3.3 6.1-8 6.1h-.4V98.4a19.54 19.54 0 0 1 .1-3.6c.1-.7.6-.6 5.1-.6 5.9 0 8.9 2.2 9.8 7.3H79v-9.3c-3.2.1-29.2.1-29.8.1M89.9 92.3v1.4c1.9 0 3.2.3 4 1.1 1.3 1.2 1.3 3.2 1.3 6v19.6c0 2.8 0 4.8-1.3 6-.8.8-2.1 1.2-4 1.1v1.3H122v-10.1h-1.6c-1.4 6.2-4 8.3-10.5 8.3-2.6 0-4.8 0-5.7-1.1-1.5-1.5-1.2-4.5-1.2-7.6V111h.4c5 0 6.9.9 8 6.1h1.6v-14h-1.6c-.3 5-3.3 6.1-8 6.1h-.4V98.4a19.54 19.54 0 0 1 .1-3.6c.1-.7.6-.6 5.1-.6 5.9 0 8.9 2.2 9.8 7.3h1.7v-9.3c-3.2.1-29.2.1-29.8.1M42.8 113.8v-1.5H25.2v1.6c4.1.5 5 1.5 5 5.6 0 5.4-2.6 7.9-8.4 7.9-8.9 0-12.1-9.2-12.1-17.7 0-4.4.9-18.7 12.6-18.7 5.8 0 10 3.7 11.8 10.1h2.1V89h-2.5a1.09 1.09 0 0 0-.1.5 2.36 2.36 0 0 1-1.4 1.2 3.91 3.91 0 0 1-2.7-.2 19.57 19.57 0 0 0-9-1.9C8.6 88.6 0 97.6 0 109.9c0 12.1 8 19.9 20.4 19.9a24.48 24.48 0 0 0 9.7-2.1 39.29 39.29 0 0 1 9-2.1v-7.1c-.1-2.8.1-4.5 3.7-4.7"
+                  />
+                </g>
+              </g>
+              <g id="flag">
+                <g id="flag-2" data-name="flag">
+                  <path
+                    class="cls-1"
+                    d="M432.6 39.9c-16.1 0-19.3 12.1-32.3 12.1h-79.8C301.2 52 299 64.1 288 64.1h-99.3l-5.8 13h83.3C288.1 77.1 296 65 296 65h82.4c23 0 31.1-12.1 31.1-12.1h107.4l5.8-13ZM352.8 0h-3.63c-20 0-22.31 12.55-33.72 12.55h-103L206.4 26h86.43c22.72 0 30.92-12.55 30.92-12.55h23ZM448.6 13.9h-4.2c-16.1 0-19.3 12.1-32.3 12.1h-79.8c-19.3 0-21.5 12.1-32.5 12.1h-99.3l-5.8 13H278c21.9 0 29.8-12.1 29.8-12.1h82.4c23 0 31.1-12.1 31.1-12.1h21.3Z"
+                  />
+                </g>
+              </g>
+            </g>
+              </svg>
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+        <div><h4>
+          <pre> 
+<a href="">Careers</a>
+<a href="">Permits</a>
+<a href="">Plans and publications</a>
+<a href="">News and media</a>
+        </pre>
+        </h4></div>
+        </div>
+        <div></div>
+        <div>
+        <div><img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/Australian_Aboriginal_Flag.svg/1200px-Australian_Aboriginal_Flag.svg.png" alt=""><img src="https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Flag_of_the_Torres_Strait_Islanders.svg/1280px-Flag_of_the_Torres_Strait_Islanders.svg.png" alt=""></div><h4>We Acknowledge the Wadawurrung People as the Traditional Owners of the Land, Waterways and Skies. We pay our respects to their Elders, past and present. We Acknowledge all Aboriginal and Torres Strait Islander people who are part of our Greater Geelong community today. </h4></div>
+      </footer>
+      <div class="footer-end"></div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
